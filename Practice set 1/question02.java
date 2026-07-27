@@ -5,11 +5,12 @@
 import java.util.Scanner;
 
 public class question02 {
-    public static void main(String args[]){
-  
+
+    public static void main(String args[]) {
+
         Scanner sc = new Scanner(System.in);
         int side = sc.nextInt();
-        int AreaOfTheSquare = side*side;
+        int AreaOfTheSquare = side * side;
         System.out.println(AreaOfTheSquare);
 
     }

@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 /*In a program, input 3 numbers: A, B andC. Youhave to output the average of
  these 3 numbers.
