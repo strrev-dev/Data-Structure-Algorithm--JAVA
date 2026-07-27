@@ -3,7 +3,7 @@
  (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem) */
 import  java.util.*;
 
-public class question3 {
+public class question03 {
     public static void main(String[] args) {
         System.out.print("Please Enter the cost of a Pencil: ");
         Scanner sc = new Scanner(System.in);
