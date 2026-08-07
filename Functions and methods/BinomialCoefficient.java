@@ -34,6 +34,8 @@ public class BinomialCoefficient {
         } else {
 
             int result = factorial(n, r);
+            System.out.println("Formula nCr :  " + n + "C" + r + " = " + n + "! / (" + r + "! * (" + n + " - " + r + ")!)");
+
             System.out.println("The binomial coefficient of " + n + " and " + r + " is: " + result);
         }
         scan.close();
