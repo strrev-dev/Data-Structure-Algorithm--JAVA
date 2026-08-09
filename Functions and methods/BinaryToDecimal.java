@@ -4,6 +4,7 @@ public class BinaryToDecimal {
 
     // Method to convert binary to decimal
     public static int bTDC(int n) {
+        
         int decimal = 0;
         int power = 0;
 
@@ -34,7 +35,8 @@ public class BinaryToDecimal {
         int binary = sc.nextInt();
         try {
             int result = bTDC(binary);
-            System.out.println("The decimal number is: " + result);
+            int myNumber = binary;
+            System.out.println("The decimal number of " + myNumber + " is: " + result);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
