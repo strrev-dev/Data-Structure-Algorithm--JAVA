@@ -1,24 +1,26 @@
-
 public class MaxSubarray_Kadane {
 
-    public static void Kadane_algo(int numbers[]) {
+    public static int Kadane_algo(int numbers[]) {
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
 
         for (int i = 0; i < numbers.length; i++) {
+            currSum += numbers[i];
+            
+            // Update maxSum before resetting currSum to handle all-negative arrays
+            maxSum = Math.max(maxSum, currSum);
 
-            currSum = currSum + numbers[i];
             if (currSum < 0) {
                 currSum = 0;
             }
-            maxSum = Math.max(currSum, maxSum);
         }
-        System.out.println("Max Sum is : " + maxSum);
+
+        return maxSum;
     }
 
     public static void main(String[] args) {
-
-        int numbers[] = {-2, -3, 4, -1, -2, 1, 5, -3};
-        Kadane_algo(numbers);
+        int numbers[] = {-1, 2, -3, -4};
+        int result = Kadane_algo(numbers);
+        System.out.println("Max Sum is : " + result);
     }
 }
