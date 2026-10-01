@@ -8,7 +8,7 @@ public class Create2dArray {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (matrix[i][j] == key) {
-                    System.out.println("The key is found at the index : (" + i + " " + j + ")");
+                    System.out.println("The key is found at the index : (" + i + ", " + j + ")");
                     found = true;
 
                 }
@@ -43,7 +43,7 @@ public class Create2dArray {
         int matrix[][] = new int[3][3];
         int n = matrix.length;
         int m = matrix[0].length;
-        int key = 25;
+        int key = 5;
         System.out.println("Enter the elements of the matrix : ");
         Scanner sc = new Scanner(System.in);
         matrices2dArray(matrix, n, m, sc);
